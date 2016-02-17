@@ -343,7 +343,7 @@ Also for the Scanner, the package now defines the ErrFinalToken error value, for
 
 * bufio (example)
 
-.play go1.6/scan.go /START OMIT/,/END OMIT/
+.play go1.6/bufio.go /START OMIT/,/END OMIT/
 
 * net/* changes
 
@@ -402,7 +402,7 @@ The time package's Parse function has always rejected any day of month larger th
 
 In Go 1.6, Parse now also rejects February 29 in non-leap years, February 30, February 31, April 31, June 31, September 31, and November 31.
 
-.play go1.6/parse.go
+.play go1.6/time_parse.go
 
 * Go 1.6
 
