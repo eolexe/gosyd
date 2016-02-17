@@ -12,7 +12,7 @@ import (
 // START OMIT
 func main() {
 	// reduce this number and see the effect
-	const workers = 99
+	const workers = 30
 
 	var wg sync.WaitGroup
 	wg.Add(workers)

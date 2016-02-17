@@ -1,13 +1,14 @@
 package main
 
 import (
-	"fmt"
+	"github.com/kr/pretty"
 	"sort"
 )
 
 // START OMIT
 type People struct{ first, last string }
-func (p People) String() string { return p.first+" "+p.last }
+
+func (p People) String() string { return p.first + " " + p.last }
 
 type ByFirstName []People
 
@@ -23,6 +24,7 @@ func main() {
 		{"April", "O'Neal"},
 	}
 	sort.Sort(ByFirstName(people))
-	fmt.Println(people)
+	pretty.Println(people)
 }
+
 // END OMIT

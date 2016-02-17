@@ -1,6 +1,7 @@
 package main
 
-import "text/template"; import "os"
+import "text/template"
+import "os"
 
 const tmpl = `
 {{ range . -}}
@@ -9,5 +10,5 @@ const tmpl = `
 
 func main() {
 	t := template.Must(template.New("").Parse(tmpl))
-	t.Execute(os.Stdout, []string{ "mars", "mercury", "pluto", "neptune" })
+	t.Execute(os.Stdout, []string{"mars", "mercury", "pluto", "neptune"})
 }

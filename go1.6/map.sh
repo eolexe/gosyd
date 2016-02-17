@@ -1,0 +1,1 @@
+go run -race map.go 
